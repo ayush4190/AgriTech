@@ -21,7 +21,9 @@ import kotlinx.android.synthetic.main.fragment_vendorsfragment.*
 class vendorsfragment : Fragment() {
 
 
-
+        private  var recyclerView:RecyclerView? = null
+        private  var adapter:CommodityAdapter?= null
+        private var gridLayoutManager:GridLayoutManager?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,15 +39,27 @@ class vendorsfragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
-        val recyclerView = view?.findViewById<RecyclerView>(R.id.recyclerview_commodity)
-        recyclerView?.layoutManager=LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL,false)
-        val adapter = CommodityAdapter()
-        recyclerView?.adapter= adapter
+
+
+
+
+
 
 
 
 
         return inflater.inflate(R.layout.fragment_vendorsfragment, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        adapter = CommodityAdapter()
+        recyclerView= view.findViewById(R.id.recyclerview_commodity)
+        gridLayoutManager = GridLayoutManager(requireContext(),2,LinearLayoutManager.VERTICAL,false)
+        recyclerView?.layoutManager = gridLayoutManager
+        recyclerView?.setHasFixedSize(true)
+        recyclerView?.adapter = adapter
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
