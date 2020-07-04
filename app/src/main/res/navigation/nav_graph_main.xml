@@ -24,6 +24,6 @@
     <fragment
         android:id="@+id/vendorsfragment"
         android:name="com.example.agritech.fragments.vendorsfragment"
-        android:label="fragment_vendorsfragment"
+        android:label="Commodities"
         tools:layout="@layout/fragment_vendorsfragment" />
 </navigation>

@@ -17,7 +17,7 @@ class CommodityAdapter():RecyclerView.Adapter<CommodityAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.commoditieslist,parent,false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.gridlayout,parent,false)
         return ViewHolder(v)
     }
 
