@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/homepage">
+
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.agritech.fragments.Homepage"
+        android:label="DashBoard"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepage_to_vendorsfragment"
+            app:destination="@id/vendorsfragment" />
+        <action
+            android:id="@+id/action_homepage_to_newContracts"
+            app:destination="@id/newContracts" />
+    </fragment>
+    <fragment
+        android:id="@+id/newContracts"
+        android:name="com.example.agritech.fragments.NewContracts"
+        android:label="NewContracts" />
+    <fragment
+        android:id="@+id/vendorsfragment"
+        android:name="com.example.agritech.fragments.vendorsfragment"
+        android:label="fragment_vendorsfragment"
+        tools:layout="@layout/fragment_vendorsfragment" />
+</navigation>
