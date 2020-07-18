@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".fragments.VendorsDetails">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:weightSum="4"
+       >
+       
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="@dimen/activity_vertical_margin"
+           android:layout_weight="0.1"
+           >
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+               android:orientation="horizontal"
+               android:hint="Select existing template">
+
+
+               <AutoCompleteTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/dropdownExistingTemplate"
+                   android:imeOptions="actionNext"
+                   android:inputType="none"/>
+           </com.google.android.material.textfield.TextInputLayout>
+       
+       </com.google.android.material.card.MaterialCardView>
+
+
+       <ImageView
+           android:layout_marginTop="@dimen/activity_horizontal_margin"
+           android:layout_marginBottom="@dimen/activity_horizontal_margin"
+           android:layout_width="match_parent"
+           android:layout_height="5dp"
+           android:src="@drawable/dotted_line"
+           android:layout_weight="0.5"
+           android:layerType="software" />
+
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Vendors Product Description"
+           android:textAlignment="center"/>
+
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="@dimen/activity_vertical_margin"
+           android:layout_weight="3"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:orientation="horizontal"
+               android:hint="Quantity"
+               >
+
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:enabled="false"
+                 android:textColor="@color/colorPrimaryDark"
+                 android:text="100KG"/>
+
+           </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                   android:orientation="horizontal"
+                   android:hint="Quantity"
+                   >
+
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:enabled="false"
+                       android:textColor="@color/colorPrimaryDark"
+                       android:text="100KG"/>
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+
+
+           </LinearLayout>
+
+
+
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="@dimen/activity_vertical_margin"
+           android:layout_weight="0.1"
+           >
+
+
+
+
+              <com.google.android.material.button.MaterialButton
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:backgroundTint="@color/Toolbar"
+                  android:text="Establish a Contract"
+                  android:id="@+id/ButtonEstablishContract"
+                  android:textColor="#FFFFFF"
+                  />
+
+
+       </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+       
+       
+       
+   </LinearLayout>
+
+</FrameLayout>

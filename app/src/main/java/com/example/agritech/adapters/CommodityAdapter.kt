@@ -5,8 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.agritech.R
+import com.example.agritech.utils.RecylerViewClickListner
+import kotlinx.android.synthetic.main.gridlayout.view.*
 
-class CommodityAdapter():RecyclerView.Adapter<CommodityAdapter.ViewHolder>() {
+class CommodityAdapter(private val  listner: RecylerViewClickListner):RecyclerView.Adapter<CommodityAdapter.ViewHolder>() {
 
 
 
@@ -26,6 +28,9 @@ class CommodityAdapter():RecyclerView.Adapter<CommodityAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.itemView.carViewCommodity.setOnClickListener{
+            listner.onCLickItemClickListner(it)
+        }
 
     }
 

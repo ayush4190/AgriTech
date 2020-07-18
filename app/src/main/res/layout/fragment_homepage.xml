@@ -135,6 +135,7 @@
              android:layout_marginLeft="16dp"
              android:layout_marginRight="16dp"
              app:cardCornerRadius="@dimen/activity_horizontal_margin"
+             android:id="@+id/cardViewTemplate"
              >
 
             <LinearLayout

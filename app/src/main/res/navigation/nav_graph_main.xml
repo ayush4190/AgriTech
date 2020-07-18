@@ -16,14 +16,44 @@
         <action
             android:id="@+id/action_homepage_to_newContracts"
             app:destination="@id/newContracts" />
+        <action
+            android:id="@+id/homepagetoTemplate"
+            app:destination="@id/setUpTemplate" />
     </fragment>
     <fragment
         android:id="@+id/newContracts"
         android:name="com.example.agritech.fragments.NewContracts"
-        android:label="NewContracts" />
+        android:label="NewContracts" >
+        <action
+            android:id="@+id/NewContractToHomepage"
+            app:destination="@id/homepage" />
+    </fragment>
     <fragment
         android:id="@+id/vendorsfragment"
         android:name="com.example.agritech.fragments.vendorsfragment"
         android:label="Commodities"
-        tools:layout="@layout/fragment_vendorsfragment" />
+        tools:layout="@layout/fragment_vendorsfragment" >
+        <action
+            android:id="@+id/CommodityToVendor"
+            app:destination="@id/vendorsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUpTemplate"
+        android:name="com.example.agritech.fragments.SetUpTemplate"
+        android:label="Templates"
+        tools:layout="@layout/fragment_set_up_template" />
+    <fragment
+        android:id="@+id/vendorsList"
+        android:name="com.example.agritech.fragments.VendorsList"
+        android:label="VendorsList"
+        tools:layout="@layout/fragment_vendors_list" >
+        <action
+            android:id="@+id/VendorListToDetails"
+            app:destination="@id/vendorsDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/vendorsDetails"
+        android:name="com.example.agritech.fragments.VendorsDetails"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_vendors_details" />
 </navigation>
