@@ -36,6 +36,7 @@ class Homepage : Fragment(), View.OnClickListener {
         navController = Navigation.findNavController(view)
         view.findViewById<MaterialCardView>(R.id.cardview_newVendor).setOnClickListener(this)
         view.findViewById<MaterialCardView>(R.id.cardview_newContracts).setOnClickListener(this)
+        view.findViewById<MaterialCardView>(R.id.cardViewTemplate).setOnClickListener(this)
 
 
 
@@ -49,6 +50,8 @@ class Homepage : Fragment(), View.OnClickListener {
             R.id.cardview_newVendor->navController!!.navigate(R.id.action_homepage_to_vendorsfragment)
 
             R.id.cardview_newContracts->navController!!.navigate(R.id.action_homepage_to_newContracts)
+
+            R.id.cardViewTemplate->navController!!.navigate(R.id.homepagetoTemplate)
         }
 
     }
