@@ -186,7 +186,8 @@
                 android:layout_height="wrap_content">
 
                <ImageView
-
+                   android:adjustViewBounds="true"
+                     android:src="@drawable/contractlaw"
                    android:layout_gravity="center_horizontal"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content" />
@@ -227,13 +228,14 @@
                 android:layout_height="wrap_content">
 
                <ImageView
-
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/marketplace"
                    android:layout_gravity="center_horizontal"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content" />
 
                <TextView
-                   android:text="Fun 1"
+                   android:text="MarketPlace"
                    android:textAlignment="center"
                    android:textColor="@android:color/black"
                    android:textSize="18sp"
@@ -268,11 +270,13 @@
                <ImageView
 
                    android:layout_gravity="center_horizontal"
+                   android:src="@drawable/message"
+                   android:adjustViewBounds="true"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content" />
 
                <TextView
-                   android:text="Fun 2"
+                   android:text="Notifications"
                    android:textAlignment="center"
                    android:textColor="@android:color/black"
                    android:textSize="18sp"

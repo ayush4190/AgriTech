@@ -220,7 +220,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                app:backgroundTint="@color/Toolbar"
                 android:id="@+id/PublishContract"
                 android:textColor="#FFFFFF"
                 app:cornerRadius="@dimen/activity_horizontal_margin"
