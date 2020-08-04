@@ -31,7 +31,7 @@ class Bottomsheetpullcontract : BottomSheetDialogFragment(){
 
 
         view.findViewById<MaterialButton>(R.id.ButtonPullContracts).setOnClickListener {
-            Toast.makeText(requireContext(), "Trigger SAP Contract", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "SAP Contract 61706 pulled in your system", Toast.LENGTH_LONG).show()
 
 
         }

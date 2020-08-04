@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/ButtonPullContracts"
-                android:text="Pull the contract in your system"
+                android:text="Trigger SAP Contract"
                 app:backgroundTint="@color/Toolbar"/>
 
         </LinearLayout>

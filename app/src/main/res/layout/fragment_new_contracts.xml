@@ -7,7 +7,7 @@
     android:screenReaderFocusable="true"
     android:layout_height="match_parent">
 
-   <ScrollView
+   <androidx.core.widget.NestedScrollView
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:padding="@dimen/activity_horizontal_margin">
@@ -220,7 +220,7 @@
            <com.google.android.material.button.MaterialButton
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-
+                app:backgroundTint="@color/Toolbar"
                android:id="@+id/PublishContract"
                android:textColor="#FFFFFF"
                app:cornerRadius="@dimen/activity_horizontal_margin"
@@ -239,7 +239,7 @@
 
        </LinearLayout>
 
-   </ScrollView>
+   </androidx.core.widget.NestedScrollView>
 
 
 
